@@ -17,12 +17,12 @@ Built using FastAPI, SQLite, and SQLAlchemy
 uvicorn app.main:app --reload
 
 **Design Desisons**
-I choose to use auto incrementing IDS for internal foreign keys relationship.
-Also the FastAPI CaseResponse schema and serializeation allows the databse to keep track of employee id and show username for the client.
+I chose to use auto-incrementing IDs for internal foreign key relationships.
+Also, the FastAPI CaseResponse schema and serialization allow the database to keep track of employee ID and show the username for the client.
 
 **Assumptions**
-I assumed that employees being deleted was a permanent
-I choose to use UTC time as a standard for claimedAt
-Assumed that clients would pass exact string like "PENDING" or "IN_PROGRESS"
+I assumed that employees being deleted was permanent.
+I chose to use UTC time as a standard for claimedAt. 
+Assumed that clients would pass an exact string like "PENDING" or "IN_PROGRESS".
 
 
